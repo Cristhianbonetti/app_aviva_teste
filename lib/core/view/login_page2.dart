@@ -1,3 +1,4 @@
+import 'package:app_aviva_teste/core/view/autenticacao_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage2 extends StatefulWidget {
@@ -144,7 +145,14 @@ class _LoginPage2State extends State<LoginPage2> {
             height: 18,
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AutenticacaoPage(),
+                ),
+              );
+            },
             style: TextButton.styleFrom(
               backgroundColor: const Color(0xFF154734),
               shape: RoundedRectangleBorder(
